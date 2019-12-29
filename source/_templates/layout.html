@@ -1,0 +1,11 @@
+{% extends '!layout.html' %}
+
+{% block document %}
+    {{ super() }}
+    {% if pagename != 'index' %}
+        <div class="admonition warning">
+            <p class="admonition-title">No warranty!</p>
+            <p>I'm no electronics specialist so don't trust me ;)</p>
+        </div>
+    {% endif %}
+{% endblock %}
